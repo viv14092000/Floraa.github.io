@@ -320,9 +320,42 @@ header {
     background-size: cover;
     background-attachment: fixed;
 }
+.more-btn{
+    display: none;
+}
+
+@media (max-width:900px){
+    
+.moreText{
+    display: none;
+}
+.more-btn{
+    display: inline;
+    outline: none;
+    border: none;
+    background:#BADFE7;
+    /* border-radius: 25px; */
+    color: #388087;
+    text-align:right;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 4px;
+    padding: 5px 8px;
+}
+.more-btn:hover{
+    text-decoration: underline;
+}
+.show-more .moreText{
+    display: inline;
+}
+.show-more .dots{
+    display: none;
+}
+}
+
 
 .last {
-    height: 6rem;
+    height: 4rem;
     /* border: 4px solid red; */
     background-color: #f4f4f4;
 }
@@ -600,9 +633,6 @@ footer hr {
     }
 }
 
-/* .fb:hover{
-    color: rgb(23, 87, 176);
-} */
 .social-icon .fb:hover {
     color: #1877F2;
 }
