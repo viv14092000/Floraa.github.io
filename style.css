@@ -126,6 +126,19 @@ header {
     font-size: 28px;
     margin-right: 5px;
 }
+@media(max-width:395px){
+    .user i{
+        font-size: 23px;
+    }
+    .main a{
+        margin-left: 0;
+    }
+}
+@media(max-width:376px){
+    .user i{  
+        display: none;
+    }
+}
 
 .main a:hover {
     color: var(--main-color);
